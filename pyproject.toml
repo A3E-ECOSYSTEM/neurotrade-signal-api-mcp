@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurotrade-signal-api-mcp"
+version = "1.0.0"
+description = "MCP server exposing the NeuroTrade Signal API as native tools for AI coding assistants."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "A3E Ecosystem Inc." }
+]
+requires-python = ">=3.10"
+keywords = ["mcp", "claude", "cursor", "trading", "signals", "crypto", "ai", "neurotrade"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+  "mcp>=1.0.0",
+  "httpx>=0.25",
+]
+
+[project.urls]
+Homepage = "https://github.com/A3E-ECOSYSTEM/neurotrade-signal-api-mcp"
+API = "https://neurotrade.a3eecosystem.com"
+Marketplace = "https://zylalabs.com/api-marketplace/other/neurotrade+signal+api/12432"
+Issues = "https://github.com/A3E-ECOSYSTEM/neurotrade-signal-api-mcp/issues"
+
+[project.scripts]
+neurotrade-mcp = "mcp_server.neurotrade_mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcp_server*"]

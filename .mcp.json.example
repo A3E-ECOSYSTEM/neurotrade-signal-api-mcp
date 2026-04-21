@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "neurotrade-signal": {
+      "command": "python",
+      "args": ["-m", "mcp_server.neurotrade_mcp"],
+      "env": {
+        "NEUROTRADE_API_KEY": "nt_your_key_here",
+        "NEUROTRADE_BASE_URL": "https://neurotrade.a3eecosystem.com"
+      }
+    }
+  }
+}
