@@ -1,11 +1,11 @@
-# NeuroTrade Signal API — MCP Server
+# NeuroTrade Signal API: MCP Server
 
 An MCP (Model Context Protocol) server exposing [NeuroTrade Signal API](https://neurotrade.a3eecosystem.com) as native tools for AI coding assistants. Drop it into Claude Code, Cursor, Zed, Continue, or any MCP-compatible client and your agent can generate AI-reasoned crypto trading signals inline.
 
 ## What you get
 
 - **Directional call** per signal: `OPEN_LONG` / `OPEN_SHORT` / `CLOSE`
-- **Confidence score** (0.0 - 1.0) with calibrated uncertainty
+- **Confidence score** (0.0 to 1.0) with calibrated uncertainty
 - **Entry / Take-Profit / Stop-Loss** prices with computed R:R ratio
 - **Natural-language thesis** explaining the setup in plain English
 - **Technical breakdown**: RSI, MACD, EMA-9/21, ATR, regime tag
